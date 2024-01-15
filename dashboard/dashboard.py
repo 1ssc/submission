@@ -4,7 +4,7 @@ import plotly.express as px
 import streamlit as st
 
 # Load data
-data_df = pd.read_csv("../dashboard/bikeshare_cleaned.csv") 
+data_df = pd.read_csv("https://raw.githubusercontent.com/1ssc/submission/main/dashboard/bikeshare_cleaned.csv")
 data_df['dateday'] = pd.to_datetime(data_df['dateday'])
 
 sns.set(style='dark')
