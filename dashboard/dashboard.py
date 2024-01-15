@@ -144,3 +144,12 @@ fig = px.bar(pengguna_harian_df, x='Hari', y='value', color='value', height=400)
 st.plotly_chart(fig, use_container_width=True)
 
 st.caption('Copyright (c), created by Moh. Wahyu Abrory')
+
+hide_st_style = """
+                <style>
+                #MainMenu {visibility: hidden;}
+                footer {visibility: hidden;}
+                header {visibility: hidden;}
+                </style>
+                """
+st.markdown(hide_st_style, unsafe_allow_html=True)
