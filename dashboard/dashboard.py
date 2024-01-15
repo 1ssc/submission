@@ -126,17 +126,17 @@ st.plotly_chart(fig, use_container_width=True)
 
 st.markdown('---')
 
-col1, col2 = st.columns((2))
+col1, col2 = st.columns((2, 2))
 
 with col1:
     st.subheader('Jumlah Sewa Sepeda Berdasarkan Kondisi Cuaca di Berbagai Musim')
     fig = px.bar(musim_hari_df(main_df), x='season', y='Jumlah Sewa', color='weather_condition', barmode='group', height=400)
-    st.plotly_chart(fig)
+    st.plotly_chart(fig, use_container_width=True)
 
 with col2:
     st.subheader('Jumlah Sewa Sepeda per Musim')
     fig = px.bar(pengguna_musiman_df, x='Musim', y='value', color='value', height=400)
-    st.plotly_chart(fig)
+    st.plotly_chart(fig, use_container_width=True)
 
 st.header('Jumlah Sewa Sepeda per Hari')
 fig = px.bar(pengguna_harian_df, x='Hari', y='value', color='value', height=400)
