@@ -4,7 +4,7 @@ import plotly.express as px
 import streamlit as st
 
 # Load data
-data_df = pd.read_csv('dashboard/bikeshare_cleaned.csv')
+data_df = pd.read_csv("../dashboard/bikeshare_cleaned.csv") 
 data_df['dateday'] = pd.to_datetime(data_df['dateday'])
 
 sns.set(style='dark')
@@ -130,7 +130,7 @@ col1, col2 = st.columns((2))
 
 with col1:
     st.subheader('Jumlah Sewa Sepeda Berdasarkan Kondisi Cuaca di Berbagai Musim')
-    fig = px.bar_polar(musim_hari_df(main_df), r='Jumlah Sewa', theta='weather_condition', color='season', template='plotly_dark', color_discrete_sequence=px.colors.sequential.Viridis)
+    fig = px.bar(musim_hari_df(main_df), x='season', y='Jumlah Sewa', color='weather_condition', barmode='group', height=400)
     st.plotly_chart(fig)
 
 with col2:
