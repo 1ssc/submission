@@ -1,9 +1,9 @@
 # 🚲 Bike-Sharing: Analysis and Dashboard
 
-## 📝 Analyze the Datasets
-‼️ See the details of this analysis and visualization on the [ipynb](https://github.com/1ssc/submission/blob/main/Proyek_Analisis_Data.ipynb) file
+## 📝 Comprehensive Analysis and Visualization
+⚡ Explore the detailed analysis and visualizations in the [ipynb](https://github.com/1ssc/submission/blob/main/Proyek_Analisis_Data.ipynb) file
 
-### 🤔Defining Question
+### 🤔Defining Questions
 1. Bagaimana perkembangan peminjaman sepeda selama satu tahun terakhir? Apakah terdapat tren kenaikan atau penurunan yang signifikan?
 2. Pada musim apa terjadi jumlah peminjaman sepeda paling sedikit? Dan pada musim apa terjadi jumlah peminjaman sepeda paling banyak?
 3. Bagaimana variabel-variabel seperti workday, day_of_week, dan holiday mempengaruhi pola peminjaman sepeda? Apakah ada perbedaan yang signifikan pada hari kerja, hari dalam seminggu, atau hari libur?
@@ -11,11 +11,11 @@
 5. Apakah terdapat korelasi antara kecepatan suhu (*temperature*) dengan total peminjaman sepeda?
 
 ### ℹ️Insight and Findings
-1. Total peminjaman tertingga sepeda pada tahun 2012 lebih besar dibandingkan dengan tahun 2011. Terlihat pola tren peningkatan jumlah peminjaman sepeda dari awal tahun hingga pertengahan tahun dan menurun pada akhir tahun.
-2. Pada musim dingin/ `Winter` peminjaman sepeda paling sedikit. Pada musim `Summer` peminjaman sepeda paling banyak. Terjadi kenaikan yang signifikan di tiap tiap musim, namun terjadi penurunuran pada musim salju `Winter`. Hal ini bisa jadi karena cuaca yang tidak mendukung untuk bersepeda.
-3. Total peminjaman sepeda pada hari kerja lebih banyak dibandingkan hari libur. Pada hari kerja, peminjaman sepeda paling banyak terjadi pada hari `Jumat`. Sedangkan peminjaman sepeda paling sedikit terjadi pada hari `Senin`. Pada hari kerja, orang cenderung meminjam sepeda pada hari-hari `non-kerja`, seperti `Sabtu` atau `Minggu`. Hal ini dapat terlihat dari grafik yang menunjukkan total peminjaman sepeda pada tahun 2011 seimbang antara hari kerja, sementara pada akhir pekan hanya terjadi pada `Sabtu` dan `Minggu`. Hasil ini mengindikasikan preferensi orang untuk meminjam sepeda terutama pada `akhir pekan`.
-4. Peminjaman sepeda cenderung meningkat saat grafik sedang cerah, tidak peduli pada musim apa pun. Hal ini dapat diamati dari informasi yang tertera di atas, bahwa meskipun saat musim salju, namun ketika grafik cerah, minat masyarakat untuk meminjam sepeda tetap tinggi. Begitupun sebaliknya.
-5. Ketika suhu rendah total peminjaman sepeda cenderung sedikit, sebaliknya jika suhu meningkat maka total peminjaman juga meningkat hal ini terjadi pada musim gugur. Dari sini terdapat `sweet-spot` dari suhu, ketika total peminjaman sepeda berada dipuncak. Kita bisa melihatnya ketika musim gugur dan musim panas. Dapat disimpulkan bahwa ketika pada saat itu, maka total peminjaman sepeda akan cenderung tinggi.
+1. Total penyewaan sepeda di tahun 2012 melebihi jumlah penyewaan sepeda di tahun 2011📈. Tren yang jelas dari peningkatan penyewaan sepeda terlihat dari awal hingga pertengahan tahun, diikuti dengan penurunan menjelang akhir tahun.
+2. Selama musim dingin, penyewaan sepeda berada pada titik terendah, sementara musim panas mengalami angka tertinggi. Ada peningkatan yang signifikan di setiap musim, kecuali penurunan 📉 selama musim dingin karena cuaca bersepeda yang tidak mendukung.
+3. Penyewaan sepeda 🚴🏻 pada hari kerja lebih banyak daripada hari libur. Hari Jumat merupakan hari dengan jumlah penyewaan sepeda tertinggi, sedangkan hari Senin merupakan hari dengan jumlah penyewaan sepeda terendah. Pada hari kerja, orang cenderung menyewa sepeda pada hari yang bukan hari kerja, seperti Sabtu atau Minggu, sebagaimana dibuktikan oleh penyewaan sepeda yang berimbang pada hari kerja di tahun 2011, dibandingkan dengan akhir pekan yang hanya terbatas pada hari Sabtu dan Minggu. Hal ini mengindikasikan adanya preferensi untuk penyewaan sepeda, terutama pada akhir pekan.
+4. Penyewaan sepeda cenderung meningkat saat cuaca cerah☀️😎, terlepas dari musimnya. Meskipun dalam kondisi bersalju, jika cuaca cerah, ada minat yang berkelanjutan terhadap penyewaan sepeda. Hal yang sebaliknya juga berlaku.
+5. Pada suhu dingin🥶, penyewaan sepeda umumnya lebih rendah, tetapi akan meningkat seiring dengan meningkatnya suhu, terutama di musim gugur. Ada *sweet-spot* dalam suhu selama musim semi dan musim panas🥵 ketika penyewaan sepeda mencapai puncaknya. Oleh karena itu, dapat disimpulkan bahwa selama musim-musim ini, penyewaan sepeda cenderung tinggi.
 
 ## 📊Dashboard w/ [Streamlit](https://dashboard-penyewaan-sepeda.streamlit.app/)
 ### Streanlit Cloud
