@@ -14,6 +14,7 @@ st.set_page_config(page_title="Dashboard Data Sewa Sepeda",
                    page_icon=":bar_chart:",
                    layout="wide")
 
+# Define Function
 def pengguna_bulanan_df(df):
     pengguna_bulanan_df = df.resample(rule='M', on='dateday').agg({
         "count": "sum",
@@ -142,3 +143,4 @@ st.header('Jumlah Sewa Sepeda per Hari')
 fig = px.bar(pengguna_harian_df, x='Hari', y='value', color='value', height=400)
 st.plotly_chart(fig, use_container_width=True)
 
+st.caption('Copyright (c), created by Moh. Wahyu Abrory')
