@@ -1,7 +1,7 @@
 {
-    "liveServer.settings.port": 5501,
-    "workbench.editorAssociations": {
-        "*.xlsx": "gc-excelviewer-excel-editor",
-        "*.csv": "jupyter-data-wrangler"
-    }
+  "liveServer.settings.port": 5501,
+  "workbench.editorAssociations": {
+    "*.xlsx": "gc-excelviewer-excel-editor",
+    "file:/**/*.csv": "jupyter-data-wrangler"
+  }
 }
